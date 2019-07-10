@@ -5,7 +5,7 @@
 [![node](https://img.shields.io/node/v/child-command.svg)](https://www.npmjs.com/package/child-command)
 [![License MIT](https://img.shields.io/github/license/nivrith/child-command.svg)](https://github.com/nivrith/child-command/blob/master/LICENSE)
 
-Check if Object has Property, super fast
+Executes a shell command with a Promise API
 
 ## Highlights
 
