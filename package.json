@@ -1,13 +1,13 @@
 {
-  "name": "shell-command",
+  "name": "child-command",
   "version": "0.1.0",
   "description": "Executes a shell command with a Promise API",
   "main": "dist/index.js",
-  "repository": "https://github.com/nivrith/shell-command",
+  "repository": "https://github.com/nivrith/child-command",
   "author": "Nivrith <nivrithgomatam@gmail.com>",
   "license": "MIT",
   "keywords": [
-    "shell-command",
+    "child-command",
     "promise-shell",
     "exec-promise",
     "exec-async",

@@ -38,7 +38,7 @@ jobs:
 
 workflows:
   version: 2
-  "shell-command":
+  "child-command":
     jobs:
       - node-latest
       - node-10

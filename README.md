@@ -1,9 +1,9 @@
-# shell-command
+# child-command
 
-[![CircleCI](https://circleci.com/gh/nivrith/shell-command/tree/master.svg?style=svg)](https://circleci.com/gh/nivrith/shell-command/tree/master)
-[![NPM Downloads](https://img.shields.io/npm/dw/shell-command.svg)](https://www.npmjs.com/package/shell-command)
-[![node](https://img.shields.io/node/v/shell-command.svg)](https://www.npmjs.com/package/shell-command)
-[![License MIT](https://img.shields.io/github/license/nivrith/shell-command.svg)](https://github.com/nivrith/shell-command/blob/master/LICENSE)
+[![CircleCI](https://circleci.com/gh/nivrith/child-command/tree/master.svg?style=svg)](https://circleci.com/gh/nivrith/child-command/tree/master)
+[![NPM Downloads](https://img.shields.io/npm/dw/child-command.svg)](https://www.npmjs.com/package/child-command)
+[![node](https://img.shields.io/node/v/child-command.svg)](https://www.npmjs.com/package/child-command)
+[![License MIT](https://img.shields.io/github/license/nivrith/child-command.svg)](https://github.com/nivrith/child-command/blob/master/LICENSE)
 
 Check if Object has Property, super fast
 
@@ -17,21 +17,21 @@ Check if Object has Property, super fast
 
 ```js
 
-import shellCommand from 'shell-command';
+import childCommand from 'child-command';
 
-shellCommand('node -v')
+childCommand('node -v')
 .catch((result) => {
   console.log(result.stdout); // v10.16.0
 });
 
 
-shellCommand('exit 2')
+childCommand('exit 2')
 .catch((error) => {
   console.log(error.code); // 2
 });
 
 
-shellCommand('>&2 echo "error"')
+childCommand('>&2 echo "error"')
 .then((result) => {
   console.log(result.stderr); // error
 })

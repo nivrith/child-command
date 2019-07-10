@@ -9,7 +9,7 @@ export interface CommandResult {
  * @param cmd {string}
  * @return {Promise<string>}
  */
-export function shellCommand(command: string, options?: ExecOptions): Promise<CommandResult> {
+export function childCommand(command: string, options?: ExecOptions): Promise<CommandResult> {
   return new Promise((resolve, reject) => {
    exec(command, options, (error, stdout, stderr) => {
     if (error) {
@@ -20,4 +20,4 @@ export function shellCommand(command: string, options?: ExecOptions): Promise<Co
   });
 }
 
-export default shellCommand;
+export default childCommand;
