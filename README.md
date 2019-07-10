@@ -20,7 +20,7 @@ Check if Object has Property, super fast
 import childCommand from 'child-command';
 
 childCommand('node -v')
-.catch((result) => {
+.then((result) => {
   console.log(result.stdout); // v10.16.0
 });
 
