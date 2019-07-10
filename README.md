@@ -17,7 +17,7 @@ Check if Object has Property, super fast
 
 ```js
 
-import childCommand from 'child-command';
+const childCommand = require('child-command');
 
 childCommand('node -v')
 .then((result) => {
